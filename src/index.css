@@ -20,12 +20,12 @@
 }
 
 .top-bar {
-  background-color: #ddd; /* Adjust background color as needed */
+/* Adjust background color as needed */
   padding: 10px;
+  
 }
-
-.navigation-bar {
-  /* Add styling for navigation bar */
+.icon-container {
+  margin-right: 20px; /* Adjust margin as needed */
 }
 
 .content-container {
@@ -35,10 +35,30 @@
 .left-section {
   width: 20%;
   padding: 10px;
+  
   /* Add styling for cards or other content */
 }
 
 .right-section {
   width: 80%;
   /* Add styling for YouTube video or other content */
+}
+
+.nav-link.active {
+  background-color: #ddd; /* Adjust background color as needed */
+  color: #333; /* Adjust text color as needed */
+  border-radius: 5px;
+}
+.navigation-bar {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  padding: 10px;
+  text-decoration: none;
+  color: #555; /* Adjust text color as needed */
+  margin-right: 10px; /* Adjust margin as needed */
+  cursor: pointer;
 }

@@ -7,6 +7,11 @@ import { FaEye } from "react-icons/fa";
 import { IoMdPeople } from "react-icons/io";
 import { IoIosStats } from "react-icons/io";
 import { MdOutlineSegment } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+import { FcOnlineSupport } from "react-icons/fc";
+import { IoCall } from "react-icons/io5";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoLogoApple } from "react-icons/io";
 import Card from './component/Card';
 function App() {
   return (  
@@ -14,6 +19,7 @@ function App() {
       <div className="main-container">
       
       <div className="sidebar">
+        <IoLogoApple color='black' />
         <MdOutlineSegment color='black'/>
         <FaBell color='black' />
         <IoMdStopwatch color='black' />
@@ -21,21 +27,40 @@ function App() {
         <FaEye  color='black'/>
         <IoMdPeople color='black' />
         <IoIosStats color='black' />
+        <CgProfile color='black' />
       </div>
 
       {/* Container */}
       <div className="container">
         {/* Top bar in the right container */}
         <div className="top-bar">
-          <h2>Your Heading</h2>
-        </div>
+          {/* Left section with heading and back button */}
+          <div className="left-section">
+            <IoIosArrowBack />
+            <h2>Basic Mathematics 101</h2>
+          </div>
+
+          {/* Right section with icons */}
+          <div className="right-section">
+            <div className="icon-container">
+            <IoCall />
+              <span>Call Teacher</span>
+            </div>
+            <div className="icon-container">
+            <FcOnlineSupport />
+              <span>Support</span>
+            </div>
+          </div>
+          </div>
 
         {/* Navigation bar in the right container */}
         <div className="navigation-bar">
-          {/* Add your navigation links or components here */}
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          {/* Add more links as needed */}
+          <a href="#" className="nav-link active">Classroom</a>
+          <a href="#" className="nav-link">Whiteboard</a>
+          <a href="#" className="nav-link">Videos</a>
+          <a href="#" className="nav-link">Slideshow</a>
+          <a href="#" className="nav-link">Document</a>
+          <a href="#" className="nav-link">Doc.Cam</a>
         </div>
 
         {/* Main content in the right container */}
